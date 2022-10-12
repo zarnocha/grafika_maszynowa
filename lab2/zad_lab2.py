@@ -29,5 +29,6 @@ def wstaw_obraz(obraz_wstawiany, w_m, h_m, wsp):
 
 
 obraz = Image.open("inicjaly.bmp")
-# wstaw_obraz(obraz, 50, 25, 2).show()
-wstaw_obraz(obraz, 150, 45, 2).show()
+wstaw_obraz(obraz, 50, 25, 2).show()
+wstaw_obraz(obraz, 150, 45, 3).show()
+wstaw_obraz(obraz, 400, 200, 5).show()
