@@ -107,8 +107,6 @@ def wlasne(w, h, dzielnik):
     return tablica
 
 
-# ----------------------------------------------------
-
 # Zadanie 3 ppkt 5:
 Image.fromarray(ramki(480, 320, 8)).save("ramki.bmp")
 Image.fromarray(pasy(480, 320, 8)).save("pasy.bmp")
