@@ -2,7 +2,7 @@ from PIL import Image
 import numpy as np
 
 
-def ramki(w, h, dzielnik):
+def ramki_rgb(w, h, dzielnik):
     GRUBOSC_STALA = int(min(w, h) / dzielnik)
     tablica = np.ones((h, w, 3), dtype=np.uint8)
     tablica = tablica * 255
@@ -46,7 +46,7 @@ def ramki(w, h, dzielnik):
     return tablica
 
 
-def ramki_negatyw(w, h, dzielnik):
+def ramki_rgb_negatyw(w, h, dzielnik):
     GRUBOSC_STALA = int(min(w, h) / dzielnik)
     tablica = np.ones((h, w, 3), dtype=np.uint8)
     tablica = tablica * 255
@@ -90,8 +90,10 @@ def ramki_negatyw(w, h, dzielnik):
     return tablica
 
 
-ramka = Image.fromarray(ramki(1000, 1000, 50), mode='RGB')
-ramka_negatyw = Image.fromarray(ramki_negatyw(1000, 1000, 50), mode='RGB')
+ramka_rgb = Image.fromarray(ramki_rgb(1000, 1000, 50), mode='RGB')
+ramka_rgb_negatyw = Image.fromarray(ramki_rgb_negatyw(1000, 1000, 50), mode='RGB')
 
-ramka.show()
-ramka_negatyw.show()
+ramka_rgb.save('obraz1_1.jpg')
+ramka_rgb.save('obraz1_1.png')
+ramka_rgb_negatyw.save('obraz1_1N.jpg')
+ramka_rgb_negatyw.save('obraz1_1N.png')
