@@ -74,4 +74,3 @@ ramka.save('obraz1_1.jpg')
 ramka.save('obraz1_1.png')
 ramka_negatyw.save('obraz1_1N.jpg')
 ramka_negatyw.save('obraz1_1N.png')
-
