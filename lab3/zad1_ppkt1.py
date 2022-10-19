@@ -70,7 +70,8 @@ def ramki_negatyw(w, h, dzielnik):
 ramka = Image.fromarray(ramki(1000, 1000, 50))
 ramka_negatyw = Image.fromarray(ramki_negatyw(1000, 1000, 50))
 
-ramka.save('obraz1_1', format='jpg')
-ramka.save('obraz1_1', format='png')
-ramka_negatyw.save('obraz1_1N', format='jpg')
-ramka_negatyw.save('obraz1_1N', format='png')
+ramka.save('obraz1_1.jpg')
+ramka.save('obraz1_1.png')
+ramka_negatyw.save('obraz1_1N.jpg')
+ramka_negatyw.save('obraz1_1N.png')
+
