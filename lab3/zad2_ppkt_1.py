@@ -81,9 +81,6 @@ def pasy_rgb_negatyw(w, h, dzielnik):
 img_pasy_rgb = Image.fromarray(pasy_rgb(1000, 1000, 50), mode='RGB')
 img_pasy_rgb_negatyw = Image.fromarray(pasy_rgb_negatyw(1000, 1000, 50), mode='RGB')
 
-img_pasy_rgb.show()
-img_pasy_rgb_negatyw.show()
-
 img_pasy_rgb.save('obraz2.jpg')
 img_pasy_rgb.save('obraz2.png')
 img_pasy_rgb_negatyw.save('obraz2N.jpg')
