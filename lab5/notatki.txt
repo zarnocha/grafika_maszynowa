@@ -1,0 +1,17 @@
+
+# zad 4.1
+# badanie kontrastu
+# maly  sredni  duzy wspolczynnik kontrastu
+# jak wspolczynnik kontrastu wplywa na efekt
+
+# zad 4.4
+# jak rozne wartosci gamma wplywaja na obraz
+
+# zad 5
+# czemu zmieniaja sie kolory a nie jasnosc
+# w lab3 wskazowki
+# jak sie przekroczy zakres uint8
+# co sie dzieje jak przekroczymy wartosc 255
+# napisac funkcje ktora dziala na tablicy tak jak ta lambda z ostatniej linijki PDFa
+
+# co ma sie dziac z pikselami jak dodajemy 100
