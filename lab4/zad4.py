@@ -3,6 +3,7 @@ from PIL import Image
 from matplotlib import pyplot as plt
 
 
+# Zadanie 4
 def wlasne(w, h, dzielnik):
     GRUBOSC_STALA = int(min(w, h) / dzielnik)
     tablica = np.zeros((h, w), dtype=np.uint8)
@@ -29,8 +30,8 @@ def wlasne(w, h, dzielnik):
 
 
 im4 = Image.fromarray(wlasne(500, 500, 30), mode='L')
-# im4.save('im4')
 
+# ppkt a.
 im1 = Image.open('obraz.jpg')
 r, g, b = im1.split()
 
@@ -38,6 +39,7 @@ im_r = Image.merge('RGB', (im4, g, b))
 im_g = Image.merge('RGB', (r, im4, b))
 im_b = Image.merge('RGB', (r, g, im4))
 
+# ppkt b.
 plt.figure(figsize=(41, 31))
 
 plt.subplot(1, 3, 1)
@@ -56,5 +58,5 @@ plt.title('Własny obraz jako B', fontsize=60)
 plt.axis('off')
 
 plt.subplots_adjust(wspace=0.1, hspace=0.1)
-# plt.savefig('fig2.png')
+plt.savefig('fig2.png')
 plt.show()
